@@ -22,7 +22,7 @@ package Unit_01;
  *      
  */
 
-public class P3_Task01_VariablesandDataTypesInJava{
+public class P3_Task01_VariablesAndDataTypes{
 	
 	static int q = 11;
 	int p = 10;
@@ -93,24 +93,24 @@ public class P3_Task01_VariablesandDataTypesInJava{
 		System.out.println(n);
 		System.out.println(o);
 		
-		System.out.println(abc.j); //data + function/methods
+		System.out.println(STU.j); //data + function/methods
 		// ABC.display();
 		
-		abc obj1 = new abc();
+		STU obj1 = new STU();
 		System.out.println(obj1.i++);
 		System.out.println(obj1.i);
 		
-		abc obj2 = new abc();
+		STU obj2 = new STU();
 		System.out.println(obj2.i);
 		
 		//System.out.println(obj1.j++);
 		//System.out.println(obj1.j);
 		//System.out.println(obj2.j);
 		
-		System.out.println(abc.j++);
-		System.out.println(abc.j);
+		System.out.println(STU.j++);
+		System.out.println(STU.j);
 		
-		abc.typeconversionAndtypeCasting();
+		STU.typeconversionAndtypeCasting();
 		
 	}
 	
@@ -126,7 +126,7 @@ public class P3_Task01_VariablesandDataTypesInJava{
 
 }
 
-class abc{
+class STU {
 	
 	static int j = 10; // class variable/static variable
 	int i = 10; // Instance Variable
