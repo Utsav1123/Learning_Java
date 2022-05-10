@@ -1,7 +1,7 @@
 package Unit_01;
 
 /* 
- * The weapper class in Java provides the mechanism to convert primitive into object and obj.
+ * The wrapper class in Java provides the mechanism to convert primitive into object and obj.
  * Why ? 
  * Because we want to use predefined methods of those objects 
  * - boolean data types -> Boolean obj; -> obj.toString();

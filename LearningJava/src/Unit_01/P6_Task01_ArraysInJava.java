@@ -6,7 +6,7 @@ package Unit_01;
  - We can store only a fixed set of elements in a Java array
  - Size limit issue:
      - We can store only the fixed size of the elements in the array
-     - It dose'nt grow its sizze at runtime
+     - It dose'nt grow its size at runtime
      - To solve this problem, collection framework is used in Java which grows automatically
     
  - There are two types of array : 1) Single Dimension Array
