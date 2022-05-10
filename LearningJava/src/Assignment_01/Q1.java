@@ -1,7 +1,7 @@
 
 
 package Assignment_01;
-import java.util.scanner;
+import java.util.Scanner;
 
 public class Q1 {
 
@@ -44,9 +44,5 @@ class Student {
 	Student() {
 		// TODO Auto-generated constructor stub
 	}
-	void display(List<Student> list) {
-		int sum_percentage=0;
-		for(int i=0;i<6;i++) sum_percentage+=list.get(i).percentage;
-		System.out.println(sum_percentage/6);
-	}
+	
 }
