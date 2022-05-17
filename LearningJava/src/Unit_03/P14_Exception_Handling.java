@@ -93,7 +93,7 @@ class ExceptionHandling {
 			int a[] = {1, 2, 3};
 			System.out.println(a[10]); 
 		} catch(ArrayIndexOutOfBoundsException e) {
-			System.out.println("Index Out of Bound Exception handled !");
+			System.out.println("Index Out of Bound Exception");
 		}
 		System.out.println("Outside try and catch block");
 	}
