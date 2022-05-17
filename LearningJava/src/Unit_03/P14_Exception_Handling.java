@@ -27,9 +27,7 @@ class ExceptionHandling {
 	void BasicException() {
 		try {
 			int a = 5, b = 0;
-			int c = a/b; // it will cause error because you are storing value infinity into int type variable..
-			// line number 19 causes Arithemetic Exception causing the program to break 
-			// Note :- we haven't handled the exception, that's why program is breaking..
+			int c = a/b; 
 			System.out.println("After the exception"+c);
 		} catch(ArithmeticException e) {
 			System.out.println("Exception handled");
@@ -43,8 +41,8 @@ class ExceptionHandling {
 			int a = 5, b = 0;
 			int c = a/b;
 			System.out.println("Inside try block"+c);
-		}catch(ArithmeticException e) {// 
-			System.out.println("Exception encountered and handled !");
+		}catch(ArithmeticException e) {
+			System.out.println("Exception encountered and handled ");
 		}
 		System.out.println("Outside try and catch block");
 	}
@@ -57,10 +55,10 @@ class ExceptionHandling {
 			int c = a/b;
 			System.out.println("Inside try block"+c);
 		} catch(ArithmeticException e) {
-			System.out.println("Exception encountered and handled by sub class of Exception !");
+			System.out.println("Exception encountered and handled by sub class of Exception ");
 		}
 		catch(Exception e) {
-			System.out.println("Exception handled by Super exception class!");
+			System.out.println("Exception handled by Super exception class");
 		}
 		System.out.println("Outside try and catch block");
 	}
