@@ -2,23 +2,24 @@
    
 package Unit_03;
 
+
 import java.util.Scanner;
 
 public class P14_Exception_Handling {
 
 	public static void main(String[] args) {
 		ExceptionHandling obj = new ExceptionHandling();
-		obj.BasicException();
-		obj.HandleException();
-		obj.MultipleCatch();
-		obj.inputMismatch();
-		obj.StackOverFlowError(10);
-		obj.IndexOutofBound();
-		obj.nullpoitnerexception();
-		obj.useofthrow();
-		obj.useOfThrowsAndFinally();
+		//obj.BasicException();
+		//obj.HandleException();
+		//obj.MultipleCatch();
+		//obj.inputMismatch();
+		//obj.StackOverFlowError(10);
+		//obj.IndexOutofBound();
+		//obj.nullpoitnerexception();
+		//obj.useofthrow();
+		//obj.useOfThrowsAndFinally();
 		obj.checkedAndUncheckedException();
-		obj.manualException();
+	
 	}
 }
 
@@ -28,11 +29,19 @@ class ExceptionHandling {
 		try {
 			int a = 5, b = 0;
 			int c = a/b; 
-			System.out.println("After the exception"+c);
-		} catch(ArithmeticException e) {
+			System.out.println("After the exception "+c);
+		} catch(ArrayIndexOutOfBoundsException e) {
 			System.out.println("Exception handled");
 		}
+		catch(Exception e)
+		{
+			System.out.println(e.getMessage());
+		}
+		//even if the exception is not caught finally will still run
+		//finally always runs irrespective of whether exception handled or not
+		finally {
 		System.out.println("Done");
+		}
 	}
 	
 	
@@ -156,36 +165,14 @@ class ExceptionHandling {
 		
 		int x = 0;
 		int y = 10;
+		if(x<2)
+		{
+			throw new ArithmeticException();
+		}
 		int z = y / x;
 
 		System.out.println(z);
 
-		
-		try {
-			useofthrow();
-		} catch (Exception e) {
-			System.out.println("hello");	
-		}
-	}
+	}}
 
-	void manualException() {
-		Scanner sc = new Scanner(System.in);
-		int l, b;
-		l = sc.nextInt();
-		
-		sc.close();
-		try {
-			if(l < 0) {
-				throw new Exception("The number cannot be negative");
-			}
-		
-			
-		}
-		catch(Exception e) {
-			System.out.println( e.getMessage());
-		}
-		finally {
-			System.out.println("hello");
-		}
-	}
-}
+	
