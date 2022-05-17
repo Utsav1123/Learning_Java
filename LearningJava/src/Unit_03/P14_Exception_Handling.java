@@ -76,7 +76,7 @@ class ExceptionHandling {
 		System.out.println("Outside the try and catch block");
 	}
 	
-	void StackOverFlowError(int i) { // its not an exception, its an error
+	void StackOverFlowError(int i) { 
 		
 		try {
 			while(i > 0) { 
@@ -91,7 +91,7 @@ class ExceptionHandling {
 	void IndexOutofBound() {
 		try {
 			int a[] = {1, 2, 3};
-			System.out.println(a[10]); //accessing the memory which is not there in array..
+			System.out.println(a[10]); 
 		} catch(ArrayIndexOutOfBoundsException e) {
 			System.out.println("Index Out of Bound Exception handled !");
 		}
