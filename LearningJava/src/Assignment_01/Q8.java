@@ -15,7 +15,7 @@ public class Q8 {
 		int index = sc.nextInt();
 		sc.close();
 		sampleArray obj = new sampleArray();
-		obj.delete(arr,index,n);
+		n=obj.delete(arr,index,n);
 		for(int i=0;i<n;i++) {
 			if(arr[i]!=0) System.out.print(arr[i]+" ");
 		}
@@ -23,8 +23,11 @@ public class Q8 {
 }
 
 class sampleArray {
-	void delete(int arr[],int index,int n) {
-		for(int i=index;i<n-1;i++) arr[i]=arr[i+1];
+	int delete(int arr[],int index,int n) {
+		for(int i=index;i<n-1;i++) 
+		arr[i]=arr[i+1];
+		
 		arr[n-1]=0;
+		return n-1;
 	}
 }

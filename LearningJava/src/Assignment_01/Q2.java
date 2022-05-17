@@ -10,16 +10,16 @@ public class Q2 {
 		sampleClass obj2 = new sampleClass();
 		sampleClass obj3 = new sampleClass();
 		obj1.display();
-		obj2.display();
-		obj3.display();
-		System.out.println(sampleClass.count);
-		
-	}
+			}
 }
 
 class sampleClass {
 	static int count=0;
-	void display(){
+	sampleClass(){
 		count++;
+	}
+	void display()
+	{
+		System.out.println(count);
 	}
 }

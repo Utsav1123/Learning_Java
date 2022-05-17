@@ -20,10 +20,13 @@ public class Q3 {
 class TestClass implements A {
 	public void display(int p) {
 		int count=0;
-		for(int i=1;i<10;i++) {
-			if(p%i==0) count++;
+		for(int i=2;i<p;i++) {
+			if(p%i==0)
+			{count++;
+			break;
+			}
 		}
-		if(count==2) System.out.println("Number is prime");
+		if(count==0) System.out.println("Number is prime");
 		else System.out.println("Number is not prime");
 	}
 }
