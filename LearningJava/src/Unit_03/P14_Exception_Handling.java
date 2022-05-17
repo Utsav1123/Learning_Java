@@ -148,6 +148,9 @@ class ExceptionHandling {
 		{
 			System.out.println(e.getMessage());
 		}
+		finally {
+			System.out.println("hello");
+		}
 	}
 	void checkedAndUncheckedException() {
 		
