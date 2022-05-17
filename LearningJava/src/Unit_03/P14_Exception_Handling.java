@@ -55,10 +55,10 @@ class ExceptionHandling {
 			int c = a/b;
 			System.out.println("Inside try block"+c);
 		} catch(ArithmeticException e) {
-			System.out.println("Exception encountered and handled by sub class of Exception ");
+			System.out.println("Exception encountered and Arithmetic Exception");
 		}
 		catch(Exception e) {
-			System.out.println("Exception handled by Super exception class");
+			System.out.println("Exception handled by exception class");
 		}
 		System.out.println("Outside try and catch block");
 	}
@@ -71,7 +71,7 @@ class ExceptionHandling {
 			System.out.println(i);
 			sc.close();
 		} catch(Exception e) {
-			System.out.println("Input Mismatch Exception handled !");
+			System.out.println("Input Mismatch Exception");
 		}
 		System.out.println("Outside the try and catch block");
 	}
@@ -83,7 +83,7 @@ class ExceptionHandling {
 				StackOverFlowError(++i);
 			}
 		} catch(Exception e) {
-			System.out.println("Exception Handled !");
+			System.out.println("Exception Handled");
 		}
 		System.out.println("Outside the try and catch block");
 	}
